@@ -1,8 +1,14 @@
-## Put comments here that give an overall description of what your
-## functions do
+##David Quinn, Prog Assignment No 2
+## 2 Functions:
+## "makeCacheMatrix" -  creates a "matrix like" object that stores an invertible matrix
+##                      and, if subsequently called by cacheSolve, its inverse in global memory
+## "cacheSolve" - returns the inverse of matrix portion of the "matrix-like" object stored
+##                  with "makeCacheMatrix".  If the inverse was previously computed and stored 
+## in memory it will pull the value of the inverse from memory.  Else, it will compute the inverse 
+## and store it in global memory.
 
 ## Creates a list object that  stores a matrix and, if inverted with cacheSolves,
-# stores the inverse in global memory/cache as well
+## stores the inverse in global memory/cache as well
 
 makeCacheMatrix <- function(x = matrix()) {
   inv<-NULL
